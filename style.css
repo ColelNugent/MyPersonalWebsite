@@ -1,0 +1,138 @@
+
+html{
+    scroll-padding-top: 100px;
+}
+
+body{
+    background-color: #F39B6D;
+    position: relative;
+    margin-top: 5%;
+    margin: 0%;
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #381D2A;
+}
+
+footer{
+    background-color: #3E6990;
+    padding: 5px;
+}
+
+section{
+    margin: 2%;
+    background-color: rgba(200, 120, 85, .8);
+    padding: 5px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #E9E3B4;
+    text-decoration: none;
+}
+
+img{
+    max-width: 95%;
+    max-height: 1280px;
+}
+
+.container{
+    width: 1280px;
+    margin:auto;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-content{
+    font-size: 2rem;
+}
+
+.nav-name{
+    color: #E9E3B4;
+}
+
+h2{
+    text-align: center;
+}
+
+.contact-elems{
+    display: inline-flex;
+}
+
+.email-sec, .linkedin-sec{
+    margin: 100px;
+    background-color: rgba(53, 94, 132, 1);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.certs-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.cert-card {
+    position: relative;
+    max-width: 10%;
+    transition: transform 0.3s;
+}
+
+.cert-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.cert-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.cert-card:hover img {
+    opacity: 0.7;
+}
+
+.cert-card:hover .cert-label {
+    opacity: 1;
+}
+
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
