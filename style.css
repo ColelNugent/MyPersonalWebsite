@@ -87,7 +87,7 @@ h2{
     padding: 15px;
 }
 
-.certs-img {
+.certs-img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,23 +96,25 @@ h2{
     margin-top: 15px;
 }
 
-.cert-card {
+.cert-card{
     position: relative;
-    max-width: 10%;
+    width: 10%;
     transition: transform 0.3s;
 }
 
-.cert-card img {
+.cert-card img{
     width: 100%;
     display: block;
     border-radius: 8px;
     transition: opacity 0.3s ease;
 }
 
-.cert-label {
+.cert-label{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    height: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -121,14 +123,20 @@ h2{
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
 }
 
-.cert-card:hover img {
+.cert-card:hover img{
     opacity: 0.7;
 }
 
-.cert-card:hover .cert-label {
+.cert-card:hover .cert-label{
     opacity: 1;
+}
+
+a:hover{
+    color: #ffffff;
+    transition: color 0.2s ease;
 }
 
 @media(max-width:1280px){
